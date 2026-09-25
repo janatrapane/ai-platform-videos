@@ -1,0 +1,24 @@
+[
+  {
+    "id": "first-question",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:21",
+    "series": {
+      "lv": "0. sērija - pamati",
+      "en": "Series 0 - basics"
+    },
+    "title": {
+      "lv": "Jautājiet asistentam",
+      "en": "Ask your assistant"
+    },
+    "description": {
+      "lv": "Darbvieta, viens skaidrs jautājums un lietojama atbilde: atgādinājums par nokavētu rēķinu.",
+      "en": "A workspace, one clear question and an answer you can use: a reminder about an overdue invoice."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  }
+]

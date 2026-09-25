@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AI platformas video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* Mitigate AI brand: ink, grape as the accent, chartreuse only as a fill, Geist + Geist Mono. */
+  :root {
+    --ink: #121016; --text-secondary: #474450; --text-muted: #777280;
+    --grape: #663399; --grape-light: #E8DCF5; --chip: #B8F02A;
+    --canvas: #F5F5F3; --surface: #FFFFFF; --stroke: #DFDCE4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Geist', system-ui, sans-serif; background: var(--canvas); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 40px 24px 80px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+  header img { height: 34px; display: block; }
+  .tag { font: 500 13px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--grape); display: flex; align-items: center; gap: 10px; }
+  .tag::before { content: ''; width: 22px; height: 6px; border-radius: 2px; background: var(--chip); }
+  h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 600; letter-spacing: -.03em; line-height: 1.08; margin: 14px 0 12px; }
+  .lead { font-size: 18px; line-height: 28px; color: var(--text-secondary); max-width: 680px; }
+  .lang { display: inline-flex; border: 1px solid var(--stroke); border-radius: 6px; background: var(--surface); overflow: hidden; }
+  .lang button { font: 500 13px 'Geist Mono', monospace; padding: 8px 14px; border: 0; background: none; color: var(--text-secondary); cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .lang button:focus-visible { outline: 2px solid var(--grape); outline-offset: -2px; }
+  .list { display: grid; gap: 40px; margin-top: 40px; }
+  article { background: var(--surface); border: 1px solid var(--stroke); border-radius: 12px; overflow: hidden; }
+  video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #0A0A0C; }
+  .meta { padding: 20px 24px 24px; display: grid; gap: 8px; }
+  .series { font: 500 12px 'Geist Mono', monospace; letter-spacing: .06em; text-transform: uppercase; color: var(--text-muted); }
+  h2 { font-size: 24px; line-height: 32px; font-weight: 600; letter-spacing: -.01em; }
+  .desc { font-size: 16px; line-height: 24px; color: var(--text-secondary); }
+  .row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 6px; font: 500 13px 'Geist Mono', monospace; color: var(--text-muted); }
+  .row a { color: var(--grape); text-decoration: none; }
+  .row a:hover { text-decoration: underline; }
+  footer { margin-top: 56px; font-size: 14px; color: var(--text-muted); }
+  @media (max-width: 600px) { .wrap { padding: 28px 16px 56px; } header { margin-bottom: 32px; } .meta { padding: 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo.svg" alt="Mitigate AI services">
+    <div class="lang" role="group" aria-label="Valoda / Language">
+      <button type="button" data-lang="lv" aria-pressed="true">LV</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <div class="tag" data-t="tag"></div>
+  <h1 data-t="h1"></h1>
+  <p class="lead" data-t="lead"></p>
+  <div class="list" id="list"></div>
+  <footer data-t="footer"></footer>
+</div>
+<script>
+  const T = {
+    lv: { tag: 'Mitigate AI platforma', h1: 'Produkta un apmācību video', lead: 'Īsi video no īstās platformas ar izdomātiem datiem. Priekšskatījums: šeit skatāmies, kā izskatās, pirms lemjam, kur tos publicēt.', download: 'Lejupielādēt MP4', footer: 'Priekšskatījums. Visi dati video ir izdomāti.', months: ['janv.', 'febr.', 'marts', 'apr.', 'maijs', 'jūn.', 'jūl.', 'aug.', 'sept.', 'okt.', 'nov.', 'dec.'] },
+    en: { tag: 'Mitigate AI Platform', h1: 'Product and training videos', lead: 'Short videos recorded in the real platform with fictional data. A preview: we are checking how they look before deciding where to publish them.', download: 'Download MP4', footer: 'Preview. All data in the videos is fictional.', months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] },
+  };
+  let lang = 'lv', videos = [];
+  try { const saved = localStorage.getItem('lang'); if (saved in T) lang = saved; } catch {}
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const date = d => { const [y, m, day] = d.split('-').map(Number); return lang === 'lv' ? `${day}. ${T.lv.months[m - 1]} ${y}` : `${day} ${T.en.months[m - 1]} ${y}`; };
+
+  function render() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-t]').forEach(el => { el.textContent = T[lang][el.dataset.t]; });
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.getElementById('list').innerHTML = videos.map(v => {
+      const l = v.locales.includes(lang) ? lang : v.locales[0];
+      const file = `videos/${v.id}-${v.version}-${l}`;
+      return `<article>
+        <video controls playsinline preload="metadata" poster="${file}.jpg"><source src="${file}.mp4" type="video/mp4"></video>
+        <div class="meta">
+          <div class="series">${esc(v.series[l] || v.series)}</div>
+          <h2>${esc(v.title[l])}</h2>
+          <p class="desc">${esc(v.description[l])}</p>
+          <div class="row"><span>${v.duration}</span><span>${date(v.date)}</span><span>${v.version}</span><a href="${file}.mp4" download>${T[lang].download}</a></div>
+        </div>
+      </article>`;
+    }).join('');
+  }
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => {
+    lang = b.dataset.lang;
+    try { localStorage.setItem('lang', lang); } catch {}
+    render();
+  }));
+  fetch('videos.json').then(r => r.json()).then(v => { videos = v; render(); });
+  render();
+</script>
+</body>
+</html>
