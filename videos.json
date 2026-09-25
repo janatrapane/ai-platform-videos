@@ -154,6 +154,28 @@
     ]
   },
   {
+    "id": "s1-4-email-workflow",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:28",
+    "series": {
+      "lv": "1. sērija - Hestija",
+      "en": "Series 1 - Hestija"
+    },
+    "title": {
+      "lv": "E-pasta darbplūsma",
+      "en": "An email workflow"
+    },
+    "description": {
+      "lv": "Darbplūsma ik pēc 15 minūtēm pārbauda pastkasti, katrs e-pasts kļūst par uzdevumu, un ieraksts reģistrā gaida jūsu apstiprinājumu.",
+      "en": "The workflow checks the mailbox every 15 minutes, each email becomes a task, and the register entry waits for your approval."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
