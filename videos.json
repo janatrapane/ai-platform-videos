@@ -242,6 +242,28 @@
     ]
   },
   {
+    "id": "s3-2-skill",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:29",
+    "series": {
+      "lv": "3. sērija - savs asistents",
+      "en": "Series 3 - your own assistant"
+    },
+    "title": {
+      "lv": "Kā top prasme",
+      "en": "How a skill is made"
+    },
+    "description": {
+      "lv": "SKILL.md ielāde formā, apraksts kā trigeris, ieslēgšana un piesaiste darba vietai, tests ar “/”.",
+      "en": "Loading SKILL.md into the form, the description as the trigger, enabling and assigning it to a workspace, and a test with “/”."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
