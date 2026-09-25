@@ -374,6 +374,28 @@
     ]
   },
   {
+    "id": "s4-4-settings-guide",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:82",
+    "series": {
+      "lv": "4. sērija - administratoram",
+      "en": "Series 4 - for administrators"
+    },
+    "title": {
+      "lv": "Darba vietas iestatījumi sīkāk",
+      "en": "Workspace settings in detail"
+    },
+    "description": {
+      "lv": "Katrs iestatījums: ko dara un ko maksā tokenos, ar mērījumu no platformas; dažādi modeļi dažādiem uzdevumiem (organizācija, darba vieta, darbplūsma).",
+      "en": "Each setting: what it does and what it costs in tokens, with a measurement from the platform; different models for different tasks (organisation, workspace, workflow)."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
