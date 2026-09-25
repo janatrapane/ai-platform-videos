@@ -110,6 +110,50 @@
     ]
   },
   {
+    "id": "s1-2-search",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:24",
+    "series": {
+      "lv": "1. sērija - Hestija",
+      "en": "Series 1 - Hestija"
+    },
+    "title": {
+      "lv": "Meklēšana dokumentos",
+      "en": "Searching documents"
+    },
+    "description": {
+      "lv": "Līgumi, kas beidzas 2026. gadā, ar atsauci uz punktu, un tabula ar datumiem, līdz kuriem jārīkojas.",
+      "en": "Contracts ending in 2026 with a reference to the clause, and a table of the dates by which to act."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s1-3-register",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:20",
+    "series": {
+      "lv": "1. sērija - Hestija",
+      "en": "Series 1 - Hestija"
+    },
+    "title": {
+      "lv": "Čeks izdevumu reģistrā",
+      "en": "A receipt in the expense register"
+    },
+    "description": {
+      "lv": "Čeka foto → izvilkti dati → rinda izdevumu reģistrā, kas tiek ierakstīta tikai pēc jūsu “Jā”.",
+      "en": "Receipt photo → extracted data → a register row that is written only after your “Yes”."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
