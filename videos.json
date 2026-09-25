@@ -1,12 +1,100 @@
 [
   {
+    "id": "s0-1-intro",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:24",
+    "series": {
+      "lv": "0. sērija - pamati",
+      "en": "Series 0 - basics"
+    },
+    "title": {
+      "lv": "Darba vieta un saruna",
+      "en": "Workspaces and chats"
+    },
+    "description": {
+      "lv": "Kā platforma ir sakārtota: organizācija, darba vietas, darba vietas sadaļas un jauna sarakste.",
+      "en": "How the platform is organised: the organisation, its workspaces, a workspace's sections and a new chat."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s0-2-question",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:32",
+    "series": {
+      "lv": "0. sērija - pamati",
+      "en": "Series 0 - basics"
+    },
+    "title": {
+      "lv": "Kā uzdot labu jautājumu",
+      "en": "How to ask a good question"
+    },
+    "description": {
+      "lv": "Neskaidrs un konkrēts jautājums, atsauce uz dokumentu un precizēšana ar vajadzīgo formu.",
+      "en": "A vague and a precise question, a reference to the document, and a follow-up that asks for a format."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s0-3-skills-tools",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:26",
+    "series": {
+      "lv": "0. sērija - pamati",
+      "en": "Series 0 - basics"
+    },
+    "title": {
+      "lv": "Prasmes un apstiprināšana",
+      "en": "Skills and approvals"
+    },
+    "description": {
+      "lv": "Prasmes izvēle ar “/”, savienotāja rīka apstiprināšana un automātiskā apstiprināšana sadaļā Rīki.",
+      "en": "Picking a skill with “/”, approving a connector tool, and automatic approval under Tools."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s0-4-security",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:30",
+    "series": {
+      "lv": "0. sērija - pamati",
+      "en": "Series 0 - basics"
+    },
+    "title": {
+      "lv": "Drošība un dati",
+      "en": "Security and data"
+    },
+    "description": {
+      "lv": "MI marķējums, lomas, koplietošana, darba vietas zināšanu bāze un privātas sarakstes.",
+      "en": "AI labelling, roles, sharing, the workspace knowledge base and private chats."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
     "duration": "0:21",
     "series": {
-      "lv": "0. sērija - pamati",
-      "en": "Series 0 - basics"
+      "lv": "Paraugs",
+      "en": "Sample"
     },
     "title": {
       "lv": "Jautājiet asistentam",
