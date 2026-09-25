@@ -286,6 +286,50 @@
     ]
   },
   {
+    "id": "s3-3-schedule",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:25",
+    "series": {
+      "lv": "3. sērija - savs asistents",
+      "en": "Series 3 - your own assistant"
+    },
+    "title": {
+      "lv": "Darbplūsma pēc grafika",
+      "en": "A scheduled workflow"
+    },
+    "description": {
+      "lv": "Nedēļas pārskats katru pirmdienu 8:00: aktivizētājs Grafiks, cron, uzvedne, ieslēgšana un “Izpildīt tagad”.",
+      "en": "A weekly overview every Monday at 8:00: the Schedule trigger, cron, prompt, enabling it and “Run Now”."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s4-3-embedded-chat",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:24",
+    "series": {
+      "lv": "4. sērija - administratoram",
+      "en": "Series 4 - for administrators"
+    },
+    "title": {
+      "lv": "Iegultais čats mājaslapā",
+      "en": "An embedded chat on your website"
+    },
+    "description": {
+      "lv": "Piekļuves režīms, atļautās vietnes, skripts ar valodu un priekšskatījums kompaktā un izvērstā skatā.",
+      "en": "Access mode, allowed websites, the script with a language, and a preview in compact and expanded views."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
