@@ -176,6 +176,28 @@
     ]
   },
   {
+    "id": "s2-1-finance",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:28",
+    "series": {
+      "lv": "2. sērija - PM Helper",
+      "en": "Series 2 - PM Helper"
+    },
+    "title": {
+      "lv": "Mani projekti: finanses",
+      "en": "My projects: finances"
+    },
+    "description": {
+      "lv": "Tāme pret aktiem no jūsu PM faila, nepiestādītie rēķini un atgādinājuma melnraksts klientam.",
+      "en": "Estimate vs acceptance acts from your PM file, uninvoiced work and a reminder draft for the client."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "s2-2-contracts",
     "version": "v1",
     "date": "2026-09-25",
