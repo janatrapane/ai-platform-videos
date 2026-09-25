@@ -242,6 +242,28 @@
     ]
   },
   {
+    "id": "s3-1-personal",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:27",
+    "series": {
+      "lv": "3. sērija - savs asistents",
+      "en": "Series 3 - your own assistant"
+    },
+    "title": {
+      "lv": "Personīgā asistenta darba vieta",
+      "en": "A personal assistant workspace"
+    },
+    "description": {
+      "lv": "Gmail, kalendārs un Drive ar jūsu paša kontu, viens jautājums par kalendāru un e-pastu, un melnraksts tikai ar jūsu “Jā”.",
+      "en": "Gmail, calendar and Drive with your own account, one question across calendar and email, and a draft only after your “Yes”."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "s3-2-skill",
     "version": "v1",
     "date": "2026-09-25",
