@@ -88,6 +88,28 @@
     ]
   },
   {
+    "id": "s1-1-receipts",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:28",
+    "series": {
+      "lv": "1. sērija - Hestija",
+      "en": "Series 1 - Hestija"
+    },
+    "title": {
+      "lv": "Čeku un rēķinu pārsaukšana",
+      "en": "Renaming receipts and invoices"
+    },
+    "description": {
+      "lv": "Hestija pārsauc čeku un rēķinu skenējumus pēc lietvedības shēmas, atzīmē neskaidros pārbaudei un gaida jūsu apstiprinājumu.",
+      "en": "Hestija renames scanned receipts and invoices by the records scheme, flags unclear ones for review and waits for your approval."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
