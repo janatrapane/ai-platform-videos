@@ -308,6 +308,50 @@
     ]
   },
   {
+    "id": "s4-1-workspace-setup",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:27",
+    "series": {
+      "lv": "4. sērija - administratoram",
+      "en": "Series 4 - for administrators"
+    },
+    "title": {
+      "lv": "Darba vietas iestatīšana",
+      "en": "Setting up a workspace"
+    },
+    "description": {
+      "lv": "Asistenta vārds, pielāgotā sistēmas uzvedne, modelis, dalībnieki, savienotāji un organizācijas politika automātiskajai apstiprināšanai.",
+      "en": "The assistant's name, the custom system prompt, the model, members, connectors and the organisation's auto-approve policy."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s4-2-usage",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:21",
+    "series": {
+      "lv": "4. sērija - administratoram",
+      "en": "Series 4 - for administrators"
+    },
+    "title": {
+      "lv": "Izlietojums, izmaksas un pēdas",
+      "en": "Usage, costs and traces"
+    },
+    "description": {
+      "lv": "Mēneša tokenu izmaksas pa darbplūsmām, darba vietām, lietotājiem un avotiem, un pēda ar katru soli: modelis, rīki, laiks, izmaksas.",
+      "en": "Monthly token costs by workflow, workspace, user and source, and a trace with every step: model, tools, time, cost."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "s4-3-embedded-chat",
     "version": "v1",
     "date": "2026-09-25",
