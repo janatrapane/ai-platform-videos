@@ -176,6 +176,50 @@
     ]
   },
   {
+    "id": "s2-2-contracts",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:22",
+    "series": {
+      "lv": "2. sērija - PM Helper",
+      "en": "Series 2 - PM Helper"
+    },
+    "title": {
+      "lv": "Līgumi un termiņi",
+      "en": "Contracts and deadlines"
+    },
+    "description": {
+      "lv": "Garantija un pagarināšana ar līguma punktiem, un tuvāko 30 dienu termiņi ar to, kas jāizdara.",
+      "en": "Warranty and extension with contract clauses, and the next 30 days' deadlines with what to do."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
+    "id": "s2-3-meeting",
+    "version": "v1",
+    "date": "2026-09-25",
+    "duration": "0:23",
+    "series": {
+      "lv": "2. sērija - PM Helper",
+      "en": "Series 2 - PM Helper"
+    },
+    "title": {
+      "lv": "Sanāksme un riski",
+      "en": "Meetings and risks"
+    },
+    "description": {
+      "lv": "No sanāksmes piezīmēm līdz protokolam ar uzdevumiem un riskam, kas gatavs projekta reģistram.",
+      "en": "From meeting notes to minutes with tasks, and a risk ready for the project register."
+    },
+    "locales": [
+      "lv",
+      "en"
+    ]
+  },
+  {
     "id": "first-question",
     "version": "v1",
     "date": "2026-09-25",
