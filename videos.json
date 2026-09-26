@@ -375,8 +375,8 @@
   },
   {
     "id": "s4-4-settings-guide",
-    "version": "v1",
-    "date": "2026-09-25",
+    "version": "v2",
+    "date": "2026-09-26",
     "duration": "0:82",
     "series": {
       "lv": "4. sērija - administratoram",
@@ -387,8 +387,8 @@
       "en": "Workspace settings in detail"
     },
     "description": {
-      "lv": "Katrs iestatījums: ko dara un ko maksā tokenos, ar mērījumu no platformas; dažādi modeļi dažādiem uzdevumiem (organizācija, darba vieta, darbplūsma).",
-      "en": "Each setting: what it does and what it costs in tokens, with a measurement from the platform; different models for different tasks (organisation, workspace, workflow)."
+      "lv": "Katrs iestatījums: ko dara un ko maksā tokenos, ar mērījumiem no platformas (kešs, domāšana); dažādi modeļi dažādiem uzdevumiem (organizācija, darba vieta, darbplūsma).",
+      "en": "Each setting: what it does and what it costs in tokens, with measurements from the platform (cache, reasoning); different models for different tasks (organisation, workspace, workflow)."
     },
     "locales": [
       "lv",
