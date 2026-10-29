@@ -242,6 +242,27 @@
     ]
   },
   {
+    "id": "s2-4-pm-daily",
+    "version": "v1",
+    "date": "2026-10-29",
+    "duration": "0:39",
+    "series": {
+      "lv": "2. sērija · PM Helper",
+      "en": "Series 2 · PM Helper"
+    },
+    "title": {
+      "lv": "Rīts, sprints un tikets",
+      "en": "Morning, sprint and ticket"
+    },
+    "description": {
+      "lv": "Rīta brīfs, backloga veselība un tiketa izpēte pirms izstrādes (paātrināts 1,5x).",
+      "en": "Morning brief, backlog health and ticket research before development (1.5x speed, Latvian only)."
+    },
+    "locales": [
+      "lv"
+    ]
+  },
+  {
     "id": "s3-1-personal",
     "version": "v1",
     "date": "2026-09-25",
